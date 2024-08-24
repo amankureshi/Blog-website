@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "inter", sans-serif;
+}
+
+header {
+    background-color: #fff;
+}
+
+header span {
+    display: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li {
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid rgb(231, 255, 17);
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav i {
+    font-size: 22px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+}
+
+.hero_content h1 {
+    font-size: 85px;
+    line-height: 1.2;
+}
+
+.hero_content h4 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: rgb(142, 136, 136);
+
+}
+
+.hero_image img {
+    border-radius: 4rem;
+    width: 100%;
+}
+
+.h_card {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    overflow: hidden;
+    border: 1px solid rgb(217, 213, 213);
+    border-radius: 5px;
+    margin: 2rem 1rem;
+
+
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+
+}
+
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_btn {
+    all: unset;
+    border: none;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+
+}
+
+.card_btn:hover {
+    border-bottom: 1px solid #ccc;
+
+}
+
+.card_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.card_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.v_card {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25);
+    overflow: hidden;
+    border: 1px solid rgb(217, 213, 213);
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.v_card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.v_card:hover {
+    transform: scale(1.04);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    transition: 0.2s ease-in-out;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.two_section {
+    display: flex;
+    flex-direction: row;
+}
+
+.two_section img {
+    width: 100%;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.card_btn {
+    all: unset;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.status a {
+    text-decoration: none;
+    color: black;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+footer p a {
+    color: black;
+}
+
+.status button {
+    all: unset;
+    color: black;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    transform: 0.2s ease-in-out;
+}
+
+.status button:hover {
+    border-bottom: 2px solid #ccc;
+    transform: 0.2s ease-in-out;
+}
+
+.two_section .two-image {
+    width: 23rem !important;
+}
+
+.two_section .card_content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+footer ul a {
+    color: black;
+}
+
+@media (max-width:786px) {
+    nav ul li {
+        display: none;
+    }
+
+    header span {
+        display: inline-block;
+    }
+
+    header nav {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        object-fit: cover;
+        margin-top: 1rem;
+
+    }
+
+    .hero_content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero_content h4 {
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: rgb(142, 136, 136);
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero_image img {
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+
+    .two_section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .two_section img {
+        width: 100%;
+    }
+
+    .two_section .two-image {
+        width: 100% !important;
+    }
+
+    footer p {
+        font-size: 14px;
+        text-align: justify;
+        max-width: 12rem;
+    }
+
+    footer ul {
+        display: flex;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+}
